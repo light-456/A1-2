@@ -17,16 +17,18 @@ Kakao API로 해당 지역 맛집을 검색하여 여행 리포트를 자동 생
 | 구분 | 기술 |
 |------|------|
 | 언어 | Python 3.10+ |
-| LLM API | Google Gemini API (`gemini-1.5-flash-latest`) |
+| LLM API | Google Gemini API (`gemini-flash-latest`) |
 | 지도 API | Kakao Local API (키워드 장소 검색) |
-| 주요 라이브러리 | `requests`, `python-dotenv`, `google-generativeai` |
+| 주요 라이브러리 | `requests`, `python-dotenv`, `google-genai` |
 
 ## ⚙️ 설치 및 설정
 
 ### 1. 라이브러리 설치
 ```bash
-pip install requests python-dotenv google-generativeai
+pip install requests python-dotenv google-genai
 ```
+
+> ℹ️ 예전 `google-generativeai` 패키지는 Google이 공식적으로 지원을 종료(deprecated)했으므로, 반드시 최신 `google-genai` 패키지를 사용합니다.
 
 ### 2. API 키 설정 (.env 파일)
 프로젝트 폴더에 `.env` 파일을 만들고 아래처럼 API 키를 입력하세요:
